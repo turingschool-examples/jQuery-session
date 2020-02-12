@@ -1,0 +1,32 @@
+.blue {
+  background-color: blue;
+}
+
+.yellow: {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.purple {
+  background-color: purple;
+
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  border: pink 1px solid;
+  padding: 2em;
+}
