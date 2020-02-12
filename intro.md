@@ -74,3 +74,6 @@ Let's get jQuery into a project.
   1. change the span's text to say '1911'
   2. give the span a class of 'green'
 5. Commit your changes!
+
+## Up next:
+Go to the [next]('./next/README.md') README file. 
