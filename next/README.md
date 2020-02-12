@@ -8,4 +8,4 @@ The rest of the sections will have a series of exercises in them, many of which 
 3. commit your changes
 
 ## Next Steps:
-Once you've got jQuery installed, head to the [part-1-selectors]('./part-1-selectors/README.md') directory. 
+Once you've got jQuery installed, head to the [part-1-selectors](./part-1-selectors/README.md) directory. 

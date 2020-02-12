@@ -38,4 +38,4 @@ In the `selectors.js` file, use jQuery to:
 6. Give the Clear button a class of red
 7. Commit your changes!
 
-Once you're done, head on to [part-2-content]('../part-2-content/README.md')
+Once you're done, head on to [part-2-content](../part-2-content/README.md)
