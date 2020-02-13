@@ -25,6 +25,7 @@ btn.click(function () {
 ```
 
 Many parts are the same here:
+
 - we still specify what kind of event we're listening for
 - we still pass the event listener a _callback function_ to run when the event happens
 
@@ -39,25 +40,61 @@ $('button').click(function() {
 jQuery provides a lot of event listeners methods for specific events (`click`, `hover`, `focus`), as well as more general handlers whose syntax closely resembles `.addEventListener()`.
 
 ## Event Delegation
+
 But what about dynamic content? jQuery even has ways to take advantage of [event delegation](https://learn.jquery.com/events/event-delegation/)! The pattern is a little different from what you've done in vanilla JS, but the ideas still apply.
 
-
 ## Questions:
+
 Use the jQuery docs to answer the following:
 
 1. What method(s) allows us to listen for / respond to an event with jQuery?
+
+Use the `.on()` method. It is also possible to attach events directly (e.g. `.click()`) however I prefer to use `.on()` for everything.
+
 2. Which method allows us to listen to any kind of event? How do you specify the event?
+
+`.on( events [, selector ] [, data ], handler )`
+
 3. What arguments do the methods from the previous two questions take?
+
+events
+Type: String
+One or more space-separated event types and optional namespaces, such as "click" or "keydown".
+
+selector
+Type: String
+A selector string to filter the descendants of the selected elements that trigger the event. If the selector is null or omitted, the event is always triggered when it reaches the selected element.
+
+data
+Type: Anything
+Data to be passed to the handler in event.data when an event is triggered.
+
+handler
+Type: Function( Event eventObject [, Anything extraParameter ][, ... ] )
+A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
+
 4. How do you take advantage of event delegation with jQuery? How is it different from vanilla JS event delegation?
+
+Via `.on()`. It differs in that we can specify some of the logic in the parameter selector to filter for the element we want to trigger the event on instead of placing that logic within the handler callback.
+
 5. How do you determine which element fired the event in a jQuery event listener? How is this different from finding the element that fired an event in vanilla JS?
-6. What’s the difference between this and $(this)? (think about what methods are available to each)
+
+You could use `event.target` or `this`. If you want to call jQuery methods on either, you need to wrap it in `$` like so `$(this)`.
+
+6. What’s the difference between this and \$(this)? (think about what methods are available to each)
+
+`this` will return a DOM element whereas `$(this)` will return a jQuery object with jQuery methods.
+
 7. Can you still access the event object within a jQuery event listener? If so, how?
+
+Yes, you can pass the event object into the handler.
 
 ## Exercises:
 
 For the last example with our form, open up `events.js` in your editor, and `events.html` in the browser (don't forget to `require` jQuery in the JS!)
 
 In the JS file:
+
 1. Rewrite the event handlers on each of the buttons into jQuery code.
 2. Listen for an `input` event on all inputs on the page. When the event fires, save that input's value to local storage
 3. When the page loads, set the value of the inputs to what was saved in local storage

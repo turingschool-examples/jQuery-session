@@ -3,8 +3,10 @@
   <head>
     <title>The Presidents of the United States of America</title>
     <meta charset="UTF-8">
-    <link href="./presidents.css" rel="stylesheet">
-    <script type="text/javascript" src="script.js"></script>
+    <link href="./presidents.css"
+          rel="stylesheet">
+    <script type="text/javascript"
+            src="script.js"></script>
   </head>
   <body>
     <table class="presidents">
@@ -335,10 +337,14 @@
         </tr>
       </tbody>
     </table>
-    <button>Add President</button>
-    <button> Remove President</button>
-    <input id="num-to-remove" placeholder="Number to remove"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <button type="button"
+            data-hook="add-president">Add President</button>
+    <button type="button"
+            data-hook="remove-president">Remove President</button>
+    <input id="num-to-remove"
+           placeholder="Number to remove" />
+    <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./presidents.js"></script>
   </body>
 </html>
