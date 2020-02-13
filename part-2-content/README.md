@@ -41,7 +41,7 @@ jQuery provides methods that shorten up most Vanilla JS DOM operations. Let's lo
 __
 3. How do you get the html inside of an element in jQuery? How would you do this in Vanilla JS?
 
-**_To get the html inside of an element usnig jQuery, you would need to use the following syntax `$(element).html() _**
+**_To get the html inside of an element usnig jQuery, you would need to use the following syntax `$(element).html()` _**
 
 4. How do you get the text / content from an input?
 
