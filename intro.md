@@ -76,4 +76,4 @@ Let's get jQuery into a project.
 5. Commit your changes!
 
 ## Up next:
-Go to the [next](./next/README.md) README file. 
+Go to the [selectors](./part-1-selectors/) README file. 
