@@ -18,6 +18,7 @@ Before that, let's talk about how to install it.
 ## Getting jQuery
 
 jQuery can be added to a project in two ways:
+
 1. A Content-Delivery Network (CDN)
 2. Via a package manager (like `npm`)
 
@@ -31,13 +32,14 @@ A CDN functions much like a script tag -- we add it an html file, and import the
 
 You're likely to see jQuery imported as a package down the line. In some project starter kits, the library will already be brought in as a dependency, but it's good to know how to set it up yourself.
 
-
 ## Using jQuery
 
 jQuery provides a function that looks like this:
+
 ```JavaScript
 $('selector')
 ```
+
 Where `'selector'` is a string used to select some kind of element.
 
 The selectors are typically CSS selectors -- similar to what you've used when querySelecting elements.
@@ -55,6 +57,7 @@ $('h1').addClass('blue');
 We'll look more deeply at other methods available to us later on, but for now, explore the documentation a bit.
 
 ### Side Note: `$(document).ready()`
+
 Sometimes a DOM may take longer to load than jQuery expects. If this happens, jQuery may try and run code on elements that don't exist yet! To avoid this potential issue, it's safe to put your jQuery code inside of a [`$(document).ready()`](https://learn.jquery.com/using-jquery-core/document-ready/) callback function. This way, the jQuery won't run until the `document` is completely loaded.
 
 ```JavaScript
@@ -67,24 +70,36 @@ $(document).ready(function() {
 
 The [docs](https://learn.jquery.com/using-jquery-core/document-ready/) are a helpful resource to understand what this method is doing, but the takeaway is that putting your jQuery code in a `$(document).ready()` is a safe way to prevent bugs.
 
-
 ## Questions
+
 1. What terminal command would you use to bring jQuery in via npm?
+
+`npm i jquery`
 
 2. After you have jQuery brought in as a dependency, how would you access it in a JavaScript file? (think about how we bring `chai` into a project)
 
+```javascript
+const $ = require('jquery);
+```
+
 3. Why would we bring in jQuery as a `dependency` rather than a `devDependency`?
 
+We would bring it in as dependency because it is required for our client to interact with our product. It is not something that is only used by the developer when working on the product and instead provides functionality that must be shipped out.
+
 4. Looking at the documentation, what does `.addClass()` do?
+
+This method adds a class to a jQuery object.
 
 ## Exercises:
 
 Let's get some basic practice with jQuery.
+
 1. Navigate into the `intro-exercise` directory. jQuery is included in this project via the CDN.
 2. In the `intro.js` file, use jQuery to select the span element and:
-  1. change the span's text to say '1911'
-  2. give the span a class of 'green'
-3. Commit your changes!
+3. change the span's text to say '1911'
+4. give the span a class of 'green'
+5. Commit your changes!
 
 ## Up next:
+
 Go to the [selectors](./part-1-selectors/) README file.
