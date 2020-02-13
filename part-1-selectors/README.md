@@ -26,11 +26,11 @@ a DOM element object which returns a function
 
 3. How can you select multiple elements with jQuery?
 
-$("element1", "element2", "element3")
+$("element1, element2, element3")
 
 4. How can you select multiple elements with different IDs and classes in one selector expression?
 
-$("header", ".className", "#idName")
+$("header, .className, #idName")
 
 
 5. What are the different ways of chaining selectors?
