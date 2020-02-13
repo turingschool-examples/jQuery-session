@@ -12,7 +12,7 @@ $(document).ready(function() {
   labelsInP.addClass('purple')
   emailInput.addClass('blue')
   phoneInputs.addClass('yellow')
-  labels.addClass('green')
+  labels.addClass('green')    
   clearBtn.addClass('red')
 })
 
