@@ -71,7 +71,7 @@ The [docs](https://learn.jquery.com/using-jquery-core/document-ready/) are a hel
 ## Questions
 1. What terminal command would you use to bring jQuery in via npm?
 
-_To bring jQuery into a project you would need to use `npm install jQuery`_
+**_To bring jQuery into a project you would need to use `npm install jQuery`_**
 
 2. After you have jQuery brought in as a dependency, how would you access it in a JavaScript file? (think about how we bring `chai` into a project)
 
@@ -79,15 +79,15 @@ _To bring jQuery into a project you would need to use `npm install jQuery`_
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="path/to/your/jquery.min.js"><\/script>')</script>
 ```
-The first link will allow you to pull in jQuery from the Google/Microsoft api, while the second link acts as a back up to pull jQuery in locally in case you can't access it from the Google/Microsoft api.
+**The first link will allow you to pull in jQuery from the Google/Microsoft api, while the second link acts as a back up to pull jQuery in locally in case you can't access it from the Google/Microsoft api.**
 
 3. Why would we bring in jQuery as a `dependency` rather than a `devDependency`?
 
-_You'd want to bring jQuery in as a dependency vs. a devDependency because if you build an application using JQuery, it is then required on the user end for the application to work properly._
+**_You'd want to bring jQuery in as a dependency vs. a devDependency because if you build an application using JQuery, it is then required on the user end for the application to work properly._**
 
 4. Looking at the documentation, what does `.addClass()` do?
 
-_`.addClass()` adds the specified class(es) to each element in the set of matched elements._
+**_`.addClass()` adds the specified class(es) to each element in the set of matched elements._**
 
 ## Exercises:
 
