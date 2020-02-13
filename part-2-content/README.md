@@ -32,22 +32,51 @@ jQuery provides methods that shorten up most Vanilla JS DOM operations. Let's lo
 
 ## Questions:
 1. How do you get the text from an element (like a paragraph) with jQuery?
+  * the __`.text()`__ _method_ will return all text inside an element
 2. How do you set the text of an element?
+  * you pass in an argument when you invoke the _method_ __`.text('argument goes here')`__ by putting your argument inside the parens;
 3. How do you get the html inside of an element in jQuery? How would you do this in Vanilla JS?
+  * __.html()__ can be used to get the contents of any element.
+  * _This method does not accept any arguments._
+
 4. How do you get the text / content from an input?
+  * Use the jQuery __val()__ _Method_ to obtain the text or content of an input.
 5. How do you set the text / content of an input?
+  * Setting the value of anything:
+  ```JavaScript
+  $(selector).val(value)
+  ```
+
 6. How do you add / remove / toggle classes on an element?
+  * addClass( className )
+  * removeClass( className )
+  * .toggleClass( className )
+
 7. What’s the difference between .text() and .text([some text here])?
+  * . text() will just give or return the text of a selected el.
+  * .text([some text here]) will find and reassign the text of the selected el.
 8. If you select multiple elements with jQuery, do you have to use a for loop / iterate through each to modify their content? Give an example.
+  * __for-loop__ jQuery
+  ```JavaScript
+  for(i = 0; i < $(".blog-post").length; i++) {
+  $(".blog-post:eq(" + i  + ")").append("<p>Here's a note</p>");
+}
+  ```
+  * __.each()__ jQuery
+  ```JavaScript
+  $(".blog-post").each(function() {
+  $(this).append("<p>Here's a note</p>");
+});
+  ```
 
 ## Exercises:
 Open up the `content.html` file in your browser, and the `content.js` file in your code editor.
 
 Within the JS file, use jQuery to:
-1. Modify the inner text of the 'Save Contact' button to say "Add New Buddy"
-2. Make the check box labels more enthusiastic (ex: `Yes!!!` or `No!!!`)
-3. Give all of the inputs default values when the page loads (not placeholders -- actual values)
-4. Select both headings (h1 and h2) and change them to say "Contact Form".
+1. ✓ Modify the inner text of the 'Save Contact' button to say "Add New Buddy"
+2. ✓ Make the check box labels more enthusiastic (ex: `Yes!!!` or `No!!!`)
+3. ✓ Give all of the inputs default values when the page loads (not placeholders -- actual values)
+4. ✓ Select both headings (h1 and h2) and change them to say "Contact Form".
 5. Commit your changes!
 
 Then head on to [events](../part-3-events)
