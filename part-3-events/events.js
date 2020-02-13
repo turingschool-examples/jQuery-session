@@ -14,11 +14,24 @@ clearBtn.on('click', function() {
   $('input').val('')
 })
 
-$('input').on('input', function(e) {
-  localStorage.setItem('info', $(e.target).val())
+$('#name, #email').on('input', function(e) {
+  localStorage.setItem(e.target.id, $(e.target).val())
 })
 
-$('input').val(localStorage.getItem('info'))
+$('.phone').on('input', function(e) {
+  $('.phone').each(function(index) {
+    localStorage.setItem('phone' + index, $(this).val())
+  })
+})
+
+$('#name').val(localStorage.getItem('name'))
+$('.phone').each(function(index) {
+  console.log('phone' + index)
+  $(this).val(localStorage.getItem('phone' + index))
+})
+
+
+$('#email').val(localStorage.getItem('email'))
 
 $('#clear-btn').on('click', function(e) {
   localStorage.clear()
