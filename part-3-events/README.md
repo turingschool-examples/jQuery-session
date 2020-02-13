@@ -48,13 +48,14 @@ Use the jQuery docs to answer the following:
 1. What method(s) allows us to listen for / respond to an event with jQuery?
 
 **_The following methods allows us to listen/respond to an event using jQuery_**
-`.bind()`
-`.delegate()`
-`.live()`
-`.on()`
-`.one()`
-`.trigger()`
-`.triggerHandler()`
+
+* `.bind()`
+* `.delegate()`
+* `.live()`
+* `.on()`
+* `.one()`
+* `.trigger()`
+* `.triggerHandler()`
 
 2. Which method allows us to listen to any kind of event? How do you specify the event?
 
