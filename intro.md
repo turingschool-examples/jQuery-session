@@ -71,11 +71,23 @@ The [docs](https://learn.jquery.com/using-jquery-core/document-ready/) are a hel
 ## Questions
 1. What terminal command would you use to bring jQuery in via npm?
 
+  npm install jquery.terminal
+
 2. After you have jQuery brought in as a dependency, how would you access it in a JavaScript file? (think about how we bring `chai` into a project)
+
+  We would add a link in the HTML files to define that jquery is linked.  I believe we will add the tag of
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  In the JS, then we would use the tag of Require.
 
 3. Why would we bring in jQuery as a `dependency` rather than a `devDependency`?
 
+  We would want to bring in jQuery as a dependency because users are also able to modify the DOM.  So, we would like to have the users able to modify the DOM element based on thier activity.
+
+
 4. Looking at the documentation, what does `.addClass()` do?
+
+  The .addClass() will add a classname to a selected DOM element.  With that class name, the css styles that is related to that classname will modified that element.
 
 ## Exercises:
 
