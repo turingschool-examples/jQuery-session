@@ -40,12 +40,24 @@ We could also use jQuery to add or delete elements in response to an event like 
 
 ## Questions:
 1. Describe what DOM traversal is and why it is useful.
+DOM traversal is how you can move up and down the DOM tree to manipulate elements.
 2. What can the siblings(), parent(), and children() methods do?
+- .children() - gets the children of each element selected
+- .siblings() - gets the siblings of each element selected
+- .parent() - gets the parent of each element selected
 3. What's the difference between `.siblings()` and `.siblings([selector])`?
+.siblings() gets all siblings of each element selected, .siblings("selector") gets all the siblings that match the selector of each element selected.
 4. What is prepend(), append(), and what are their differences?
+- prepend() - inserts the specified content as the first child of each element selected
+- append() - inserts the specified content as the last child of each element selected
 5. What arguments can `.prepend()` and `.append()` take?
+content or a function
 6. What is the difference between parent() and parents()? Why would I want to use either?
+Parent gets the direct ancestor of all selected elements. Parents gets all ancestors. If you want only the most direct ancestor, use parent(). If you want all ancestors, use parents().
 7. Describe closest() and find(). What are their use cases?
+- closest() - For each element selected, gets the first element that matches the selector when traversing up the DOM tree.
+- find() - Find does the same thing as closest, but travels down the DOM tree instead of up (so it traverses descendants instead of ancestors)
+
 
 ## Exercises:
 We've got two sets of exercises to tie the last sections together:
