@@ -46,7 +46,23 @@ But what about dynamic content? jQuery even has ways to take advantage of [event
 Use the jQuery docs to answer the following:
 
 1. What method(s) allows us to listen for / respond to an event with jQuery?
+
+**_The following methods allows us to listen/respond to an event using jQuery_**
+
+* `.bind()`
+* `.delegate()`
+* `.live()`
+* `.on()`
+* `.one()`
+* `.trigger()`
+* `.triggerHandler()`
+
 2. Which method allows us to listen to any kind of event? How do you specify the event?
+
+**_The following method allows us to list to any kind of event using the following specification_**
+
+
+
 3. What arguments do the methods from the previous two questions take?
 4. How do you take advantage of event delegation with jQuery? How is it different from vanilla JS event delegation?
 5. How do you determine which element fired the event in a jQuery event listener? How is this different from finding the element that fired an event in vanilla JS?

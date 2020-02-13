@@ -32,13 +32,40 @@ jQuery provides methods that shorten up most Vanilla JS DOM operations. Let's lo
 
 ## Questions:
 1. How do you get the text from an element (like a paragraph) with jQuery?
+
+**_To get the text from an element using jQuery, you'd need to use the following syntax `$(element).text()`_**
+
 2. How do you set the text of an element?
+
+**_To set the text from an element using jQuery, you'd need to use the following syntax `$(element).text()`_**
+__
 3. How do you get the html inside of an element in jQuery? How would you do this in Vanilla JS?
+
+**_To get the html inside of an element usnig jQuery, you would need to use the following syntax `$(element).html()` _**
+
 4. How do you get the text / content from an input?
+
+**_To get the html inside of an element using jQuery, you would need to use the following syntax `$(element).val()`_**
+
 5. How do you set the text / content of an input?
+
+**_To set the html inside of an element using jQuery, you would need to use the following syntax `$(element).val()`_**
+
 6. How do you add / remove / toggle classes on an element?
+
+**_To add a class on an element using jQuery, you would need to use the following syntax `$(element).addClass()`_**
+**_To remove a class on an element using jQuery, you would need to use the following syntax `$(element).removeClass()`_**
+**_To add a class on an element using jQuery, you would need to use the following syntax `$(element).toggleClass()`_**
+
 7. What’s the difference between .text() and .text([some text here])?
+
+**In `.text()`, you ware getting the text that is inside that element, whereas with `.text([some text here])`, you are setting the text of that element to what's inside the parenthesis of the jQuery text function._**
+
 8. If you select multiple elements with jQuery, do you have to use a for loop / iterate through each to modify their content? Give an example.
+
+**_To select multiple elements with jQuery, you do not have to use a for loop to iterate throug each element to modify their content, because the jQuery function will inherently select all the elements specified._** 
+
+**ie:** `$(p).text('Hello, world!')` **_This will select all the paragraphs in a document and set them to 'Hello, world!'_**
 
 ## Exercises:
 Open up the `content.html` file in your browser, and the `content.js` file in your code editor.
