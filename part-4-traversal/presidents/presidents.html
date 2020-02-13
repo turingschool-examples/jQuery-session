@@ -4,7 +4,7 @@
     <title>The Presidents of the United States of America</title>
     <meta charset="UTF-8">
     <link href="./presidents.css" rel="stylesheet">
-    <script type="text/javascript" src="script.js"></script>
+    <!-- <script type="text/javascript" src="script.js"></script> -->
   </head>
   <body>
     <table class="presidents">
@@ -335,9 +335,17 @@
         </tr>
       </tbody>
     </table>
-    <button>Add President</button>
-    <button> Remove President</button>
-    <input id="num-to-remove" placeholder="Number to remove"/>
+    <div class="add-div">
+      <input id="add-num" type="number" name="number" placeholder="46">
+      <input id="add-name" type="text" name="name" placeholder="Bernie Sanders">
+      <input id="add-term" type="text" name="term" placeholder="2020-">
+      <input id="add-party" type="text" name="party" placeholder="Democrat">
+      <button id="add">Add President</button>
+    </div>
+    <div class="remove-div">
+      <input id="num-to-remove" placeholder="Number to remove"/>
+      <button id="remove"> Remove President</button>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./presidents.js"></script>
   </body>

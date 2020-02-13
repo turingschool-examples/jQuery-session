@@ -46,12 +46,25 @@ But what about dynamic content? jQuery even has ways to take advantage of [event
 Use the jQuery docs to answer the following:
 
 1. What method(s) allows us to listen for / respond to an event with jQuery?
+.on() .click() .focus() .hover()
+
 2. Which method allows us to listen to any kind of event? How do you specify the event?
+.on(), the specification of the event type is the first parameter
+
 3. What arguments do the methods from the previous two questions take?
+They all take in callback functions. .on() takes in an event type and a callback function
+
 4. How do you take advantage of event delegation with jQuery? How is it different from vanilla JS event delegation?
+With jQuery, you can use this or e.target to specify the target of an event. You assign the selector to the parent element and then can specify which element you want to impact based on the child element's attribute, id, element type, etc. Vanilla JS functions similarly, but you can't use this instead of e.target.
+
 5. How do you determine which element fired the event in a jQuery event listener? How is this different from finding the element that fired an event in vanilla JS?
+jQuery is e.target or this, vanilla is just e.target
+
 6. What’s the difference between this and $(this)? (think about what methods are available to each)
+$(this) is a jQuery object that can utilize jQuery methods, this is not.
+
 7. Can you still access the event object within a jQuery event listener? If so, how?
+e.target
 
 ## Exercises:
 
