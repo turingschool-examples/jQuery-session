@@ -12,6 +12,8 @@ btn.addEventListener('click', function() {
   console.log('Button was clicked')
 })
 
+
+
 ```
 
 Vanilla JS makes us write a lot of code for one click. The whole process is much cleaner in jQuery:
@@ -46,12 +48,36 @@ But what about dynamic content? jQuery even has ways to take advantage of [event
 Use the jQuery docs to answer the following:
 
 1. What method(s) allows us to listen for / respond to an event with jQuery?
+
+The methods that allow us to listen for / respond to an event with jQuery include ones such as .click, .keydown, .keypress, .keyup, .mouseover, .mouseout, .mouseenter, .mouseleave, .scroll, .focus, .blue, .resize
+
+
 2. Which method allows us to listen to any kind of event? How do you specify the event?
+
+The method that allows us to listen / respond to an event with jQuery is the .on method and within it's parenthesis we specify the event we are looking for and what to do once that event is triggered.
+
+
 3. What arguments do the methods from the previous two questions take?
-4. How do you take advantage of event delegation with jQuery? How is it different from vanilla JS event delegation?
+
+The methods takes the arguments of the event type being listened for, and the action/function to do when that event is triggered.
+
+4. How do you take advantage of event delegation with
+jQuery? How is it different from vanilla JS event delegation?
+
+Event delegation allows us take an event listener and put it on a parent element, but then allow all the children elements to inherit it as well.
+
 5. How do you determine which element fired the event in a jQuery event listener? How is this different from finding the element that fired an event in vanilla JS?
+
+We can determine which element fire the event by using the event argument which passes an event object that includes information about the event, when and where it occurred, what type of event it was, which element it occurred on, and much more.
+
 6. What’s the difference between this and $(this)? (think about what methods are available to each)
+
+'this' is the DOM object, $(this) is the jQuery wrapper around it.  Using 'this' allows you to access the DOM methods while $(this) allows you to access the jQuery methods, but those two things can't access the others' methods.
+
+
 7. Can you still access the event object within a jQuery event listener? If so, how?
+
+The jQuery object wrapper works with the event listener to allow the event object to be accessed within the jQuery event listener.  This is done through binding.
 
 ## Exercises:
 

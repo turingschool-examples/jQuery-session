@@ -1,4 +1,4 @@
-const $ = require('jquery');
+// const $ = require('jquery');
 let btn = document.querySelector('button');
 btn.addEventListener('click', function(e){
   e.preventDefault();
@@ -10,5 +10,13 @@ clearBtn.addEventListener('click', function(){
     input.value = "";
   })
 })
+
+$(document).ready(function () {
+  $('button[type="submit"]').text("Add New Buddy");
+  $('label[for="confirm"]').text("Yes!!!");
+  $('label[for="deny"]').text("No!!!");
+  $('input').val("Type Here!");
+  $('h1, h2').text("Contact Form");
+});
 
 console.log($('p').text())
