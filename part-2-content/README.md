@@ -33,23 +33,23 @@ jQuery provides methods that shorten up most Vanilla JS DOM operations. Let's lo
 ## Questions:
 1. How do you get the text from an element (like a paragraph) with jQuery?
 
-**_To get the text from an element using jQuery, you'd need to use the following syntax `$(element).text()` _**
+**_To get the text from an element using jQuery, you'd need to use the following syntax `$(element).text()`_**
 
 2. How do you set the text of an element?
 
-**_To set the text from an element using jQuery, you'd need to use the following syntax `$(element).text()` _**
+**_To set the text from an element using jQuery, you'd need to use the following syntax `$(element).text()`_**
 __
 3. How do you get the html inside of an element in jQuery? How would you do this in Vanilla JS?
 
-**_To get the html inside of an element usnig jQuery, you would need to use the following syntax `$(element).html()` _**
+**_To get the html inside of an element usnig jQuery, you would need to use the following syntax `$(element).html() _**
 
 4. How do you get the text / content from an input?
 
-**_To get the html inside of an element using jQuery, you would need to use the following syntax `$(element).val()` _**
+**_To get the html inside of an element using jQuery, you would need to use the following syntax `$(element).val()`_**
 
 5. How do you set the text / content of an input?
 
-**_To set the html inside of an element using jQuery, you would need to use the following syntax `$(element).val()` _**
+**_To set the html inside of an element using jQuery, you would need to use the following syntax `$(element).val()`_**
 
 6. How do you add / remove / toggle classes on an element?
 
@@ -65,7 +65,7 @@ __
 
 **_To select multiple elements with jQuery, you do not have to use a for loop to iterate throug each element to modify their content, because the jQuery function will inherently select all the elements specified._** 
 
-ie: `$(p).text('Hello, world!')` **_This will select all the paragraphs in a document and set them to 'Hello, world!'_**
+**ie:** `$(p).text('Hello, world!')` **_This will select all the paragraphs in a document and set them to 'Hello, world!'_**
 
 ## Exercises:
 Open up the `content.html` file in your browser, and the `content.js` file in your code editor.
