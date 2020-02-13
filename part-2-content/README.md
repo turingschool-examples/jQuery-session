@@ -32,13 +32,31 @@ jQuery provides methods that shorten up most Vanilla JS DOM operations. Let's lo
 
 ## Questions:
 1. How do you get the text from an element (like a paragraph) with jQuery?
+$('p').text();
+
 2. How do you set the text of an element?
+$('element').text('new text');
+
 3. How do you get the html inside of an element in jQuery? How would you do this in Vanilla JS?
+$('element').html();
+document.querySelector('element').innerHTML
+
 4. How do you get the text / content from an input?
+$('input').val();
+
 5. How do you set the text / content of an input?
+$('input').val('new val');
+
 6. How do you add / remove / toggle classes on an element?
+$('element').addClass('class');
+$('element').removeClass('class');
+$('element').toggleClass('class');
+
 7. What’s the difference between .text() and .text([some text here])?
+With nothing in the parens, it retrieves the value. With something in them, it sets a new value.
+
 8. If you select multiple elements with jQuery, do you have to use a for loop / iterate through each to modify their content? Give an example.
+No, you can use .each() instead
 
 ## Exercises:
 Open up the `content.html` file in your browser, and the `content.js` file in your code editor.
