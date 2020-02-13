@@ -14,22 +14,32 @@ Use the [jQuery Documentation](https://api.jquery.com/) to answer the following 
 ## Questions:
 1. How do you select a single element in jQuery? How does this differ from vanilla JS?
 
-We can use .get() and specify the index value of the element we want.  This is different from vanilla JS which uses document.querySelector and then specifies something by ID or class name.
+We can use .get() and specify the index value of the element we want.  You can also select by ID. This is different from vanilla JS which uses document.querySelector and then specifies something by ID or class name.
 
 2. What does the jQuery function return? How is it similar or different from a DOM Element object?
 
-Return 
+It returns a jQuery object with a lot of methods included with it.
 
 3. How can you select multiple elements with jQuery?
 
+You can select multiple elements by selecting by the element type and it will select all those elements.  You can also use multiple selectors in the same statement.
+
 4. How can you select multiple elements with different IDs and classes in one selector expression?
+
+
+You can chain selectors using commas to separate them, a space, or even nothing.  With chaining, you can select whichever elements you specify.
 
 5. What are the different ways of chaining selectors?
 
+Using commas, spacing, or nothing.
+
 6. How do you select elements based on different attributes?
+
+You specify the attribute type in square brackets after the element selector.  So if you wanted to select the input submit type attributes it would be $('input[type=submit]')
 
 7. How do you select a checkbox based on its state?
 
+$('input:checked')
 
 ## Exercises:
 Open up the `selectors.html` file in your browser.
