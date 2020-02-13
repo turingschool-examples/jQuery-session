@@ -78,7 +78,7 @@ The [docs](https://learn.jquery.com/using-jquery-core/document-ready/) are a hel
   We would add a link in the HTML files to define that jquery is linked.  I believe we will add the tag of
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   
-  In the JS, then we would use the tage of Require.
+  In the JS, then we would use the tag of Require.
 
 3. Why would we bring in jQuery as a `dependency` rather than a `devDependency`?
 
