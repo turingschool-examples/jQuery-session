@@ -40,7 +40,9 @@ We could also use jQuery to add or delete elements in response to an event like 
 
 ## Questions:
 1. Describe what DOM traversal is and why it is useful.
+allows us to select elements randomly and also in a sequantial method
 2. What can the siblings(), parent(), and children() methods do?
+siblings returns all sibling elements of a selected element.
 3. What's the difference between `.siblings()` and `.siblings([selector])`?
 4. What is prepend(), append(), and what are their differences?
 5. What arguments can `.prepend()` and `.append()` take?

@@ -32,13 +32,21 @@ jQuery provides methods that shorten up most Vanilla JS DOM operations. Let's lo
 
 ## Questions:
 1. How do you get the text from an element (like a paragraph) with jQuery?
+.text()
 2. How do you set the text of an element?
+passing arguments
 3. How do you get the html inside of an element in jQuery? How would you do this in Vanilla JS?
+.html(), .innerHTML
 4. How do you get the text / content from an input?
+.val()
 5. How do you set the text / content of an input?
+pass an argument into the method
 6. How do you add / remove / toggle classes on an element?
+.addClass(), .removeClass(), .toggleClass()
 7. What’s the difference between .text() and .text([some text here])?
+ones accesses the element and the other is mutating the element
 8. If you select multiple elements with jQuery, do you have to use a for loop / iterate through each to modify their content? Give an example.
+no. The object does it for you. When we added a class to all the elements it does it for you. 
 
 ## Exercises:
 Open up the `content.html` file in your browser, and the `content.js` file in your code editor.

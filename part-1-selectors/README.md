@@ -13,18 +13,22 @@ Use the [jQuery Documentation](https://api.jquery.com/) to answer the following 
 
 ## Questions:
 1. How do you select a single element in jQuery? How does this differ from vanilla JS?
-
+just a dollar sign and parens and quotes around the element.
 2. What does the jQuery function return? How is it similar or different from a DOM Element object?
-
+it returns the element itself not just the wrapper
 3. How can you select multiple elements with jQuery?
-
+.first
 4. How can you select multiple elements with different IDs and classes in one selector expression?
-
+$("elements1, element2, element3")
 5. What are the different ways of chaining selectors?
+$("element1, element2, element3")
 
 6. How do you select elements based on different attributes?
+with bracket notation
+ex:$( "input[value='Hot Fuzz']"
 
 7. How do you select a checkbox based on its state?
+$("[type=checkbox]:checked")
 
 
 ## Exercises:
