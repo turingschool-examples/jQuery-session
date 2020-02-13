@@ -10,7 +10,6 @@ clearBtn.addEventListener('click', function(){
   })
 })
 $(document).ready(function() {
-  // jQuery code goes here, in the body of this callback function
   $("label").addClass("green");
   $('.phone').addClass("yellow");
   $('label[for="email"]').removeClass('green').addClass("blue")
