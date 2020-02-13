@@ -14,7 +14,11 @@ Use the [jQuery Documentation](https://api.jquery.com/) to answer the following 
 ## Questions:
 1. How do you select a single element in jQuery? How does this differ from vanilla JS?
 
+We can use .get() and specify the index value of the element we want.  This is different from vanilla JS which uses document.querySelector and then specifies something by ID or class name.
+
 2. What does the jQuery function return? How is it similar or different from a DOM Element object?
+
+Return 
 
 3. How can you select multiple elements with jQuery?
 
