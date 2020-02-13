@@ -11,7 +11,7 @@ clearBtn.addEventListener('click', function(){
 })
 
 $('label').addClass('green');
-$('.phone').addClass('yellow');
+$('input.phone').addClass('yellow');
 $(`label[for='email']`).addClass('blue');
 if ($(`input[type='checkbox'`).attr('checked')) {
   console.log($(`input[type='checkbox'`).attr('id'))
