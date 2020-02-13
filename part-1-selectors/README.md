@@ -14,18 +14,29 @@ Use the [jQuery Documentation](https://api.jquery.com/) to answer the following 
 ## Questions:
 1. How do you select a single element in jQuery? How does this differ from vanilla JS?
 
+  * $('#selector') vs document.querySelector('#selector')
+
 2. What does the jQuery function return? How is it similar or different from a DOM Element object?
+
+  * A object with methods vs an element
 
 3. How can you select multiple elements with jQuery?
 
+  * using the appropriate selector
+
 4. How can you select multiple elements with different IDs and classes in one selector expression?
 
+  * Selectors for type and other Selector like:
+    * :contains() Selector Select all elements that contain the specified text.
+
 5. What are the different ways of chaining selectors?
+  * $(selector 1.1 selector 1.2, selector 2.1 selector 2.2)
 
 6. How do you select elements based on different attributes?
+  * $(element :psudoSelector)
 
 7. How do you select a checkbox based on its state?
-
+  * $(:checked)
 
 ## Exercises:
 Open up the `selectors.html` file in your browser.
