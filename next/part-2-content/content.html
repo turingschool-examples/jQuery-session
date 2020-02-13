@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" type="text/css" href="./content.css">
+</head>
+<body>
+  <article class="wrapper">
+    <form id="form">
+      <h1> Add a New Contact:</h1>
+      <h2> A jQuery Exercise</h2>
+      <label for="name">Name</label>
+      <input id="name" value="Jeff">
+      <label>Phone Number
+        <div class="phone-wrapper wrapper">
+          <input class="phone" type="number" placeholder="(123)">
+          <input class="phone" type="number" placeholder="456">
+          <input class="phone" type="number" placeholder="7890">
+        </div>
+      </label>
+      <label for="email">Email</label>
+      <input id="email" type="email">
+      <p>Are you a robot?
+        <label for="confirm">Yes</label>
+        <input id="confirm" type="checkbox" checked>
+        <label for="deny">...no...</label>
+        <input id= "deny" type="checkbox" >
+      </p>
+      <button type="submit">Save Contact</button>
+    </form>
+  </article>
+  <button type="button" id="clear-btn">Clear</button>
+
+  <script src="./content.js" charset="utf-8"></script>
+</body>
