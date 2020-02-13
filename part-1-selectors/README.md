@@ -28,6 +28,7 @@ with bracket notation
 ex:$( "input[value='Hot Fuzz']"
 
 7. How do you select a checkbox based on its state?
+$("[type=checkbox]:checked")
 
 
 ## Exercises:
