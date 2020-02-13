@@ -40,11 +40,29 @@ We could also use jQuery to add or delete elements in response to an event like 
 
 ## Questions:
 1. Describe what DOM traversal is and why it is useful.
+
+DOM traversal is how we get from one element to another in JS
+
 2. What can the siblings(), parent(), and children() methods do?
+
+access a nodelist of the element's siblings, parents, or children
+
 3. What's the difference between `.siblings()` and `.siblings([selector])`?
+
+the first gets all the siblings, the second filters that list for a given selector
+
 4. What is prepend(), append(), and what are their differences?
+
+append inserts it after the element, prepend inserts before
+
 5. What arguments can `.prepend()` and `.append()` take?
+
+one or more DOM elements, text nodes, array of elements/text nodes, HTML string, or a jQuery object
+
 6. What is the difference between parent() and parents()? Why would I want to use either?
+
+parent gets the first parent, parents gets all ancestors
+
 7. Describe closest() and find(). What are their use cases?
 
 ## Exercises:

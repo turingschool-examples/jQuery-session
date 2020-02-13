@@ -2,3 +2,20 @@
 .strikeout {
 	text-decoration: line-through;
 }
+
+.red {
+	background-color: red;
+}
+
+.pink {
+	background-color: pink;
+}
+
+.green {
+	background-color: green;
+	color: white;
+}
+
+.bold {
+	font-weight: bold;
+}
