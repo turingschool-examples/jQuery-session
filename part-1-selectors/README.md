@@ -13,18 +13,30 @@ Use the [jQuery Documentation](https://api.jquery.com/) to answer the following 
 
 ## Questions:
 1. How do you select a single element in jQuery? How does this differ from vanilla JS?
+Just use dollar sign. You could use .first() to select the first element.
 
 2. What does the jQuery function return? How is it similar or different from a DOM Element object?
+The jQuery function returns the jQuery object with all the methods we can use. A DOM Element object is an object that has methods as well.
 
 3. How can you select multiple elements with jQuery?
 
+Use the dollar sign and any elements that match the criteria will be selected.
+
 4. How can you select multiple elements with different IDs and classes in one selector expression?
+
+Add all classes or IDs you want to select, separated with commas.
 
 5. What are the different ways of chaining selectors?
 
+You can chain with spaces or periods, same as CSS.
+
 6. How do you select elements based on different attributes?
 
+You can use brackets to select attributes
+
 7. How do you select a checkbox based on its state?
+
+Use the prop() method to see if a checkbox is checked. Or you can use the :checked selector.
 
 
 ## Exercises:
