@@ -70,7 +70,7 @@ The [docs](https://learn.jquery.com/using-jquery-core/document-ready/) are a hel
 
 ## Questions
 1. What terminal command would you use to bring jQuery in via npm?
-- npm install jquery
+- `npm install jquery`
 
 2. After you have jQuery brought in as a dependency, how would you access it in a JavaScript file? (think about how we bring `chai` into a project)
 - we have to require it in by using `var $ = require("jquery");`
