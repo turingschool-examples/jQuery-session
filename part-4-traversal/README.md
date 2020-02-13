@@ -50,7 +50,7 @@ We could also use jQuery to add or delete elements in response to an event like 
 ## Exercises:
 We've got two sets of exercises to tie the last sections together:
 
-1. [Grocery List]('./grocery-list')
-2. [Presidents]('./presidents')
+1. [Grocery List](./grocery-list)
+2. [Presidents](./presidents)
 
 Once you've finished and committed these exercises, push up all your changes and make a PR to submit your work! You're ready to write some jQuery.
