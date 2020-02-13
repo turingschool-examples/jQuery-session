@@ -9,3 +9,12 @@ clearBtn.addEventListener('click', function(){
     input.value = "";
   })
 })
+
+$(document).ready(function() {
+  $('label').addClass('green');
+  $('.phone').addClass('yellow');
+  $( "label[for='email']" ).addClass('blue')
+  console.log($('#confirm').attr('ID'))
+  $('p label').addClass('purple')
+  $('#clear-btn').addClass('red')
+})
