@@ -21,7 +21,7 @@ jQuery can be added to a project in two ways:
 1. A Content-Delivery Network (CDN)
 2. Via a package manager (like `npm`)
 
-A CDN functions much like a script tag -- we add it an html file, and import the library whenever the HTML page runs.
+A CDN functions much like a script tag -- we add it an html file, and import the library whenever the HTML page runs. This is what we'll use for this lesson.
 
 ```HTML
 <!-- Google-Hosted CDN: -->
@@ -29,7 +29,7 @@ A CDN functions much like a script tag -- we add it an html file, and import the
 
 ```
 
-You're more likely to see jQuery imported as a package. In some project starter kits, the library will already be brought in as a dependency, but it's good to know how to set it up yourself.
+You're likely to see jQuery imported as a package down the line. In some project starter kits, the library will already be brought in as a dependency, but it's good to know how to set it up yourself.
 
 
 ## Using jQuery
@@ -54,8 +54,21 @@ $('h1').addClass('blue');
 
 We'll look more deeply at other methods available to us later on, but for now, explore the documentation a bit.
 
+### Side Note: `$(document).ready()`
+Sometimes a DOM may take longer to load than jQuery expects. If this happens, jQuery may try and run code on elements that don't exist yet! To avoid this potential issue, it's safe to put your jQuery code inside of a [`$(document).ready()`](https://learn.jquery.com/using-jquery-core/document-ready/) callback function. This way, the jQuery won't run until the `document` is completely loaded.
 
-### Questions
+```JavaScript
+// Top of a scripts.js or similar file:
+
+$(document).ready(function() {
+  // jQuery code goes here, in the body of this callback function
+})
+```
+
+The [docs](https://learn.jquery.com/using-jquery-core/document-ready/) are a helpful resource to understand what this method is doing, but the takeaway is that putting your jQuery code in a `$(document).ready()` is a safe way to prevent bugs.
+
+
+## Questions
 1. What terminal command would you use to bring jQuery in via npm?
 
 2. After you have jQuery brought in as a dependency, how would you access it in a JavaScript file? (think about how we bring `chai` into a project)
@@ -64,16 +77,14 @@ We'll look more deeply at other methods available to us later on, but for now, e
 
 4. Looking at the documentation, what does `.addClass()` do?
 
-### Exercises:
+## Exercises:
 
-Let's get jQuery into a project.
-1. Navigate into the `intro-exercise` directory.
-2. Get jQuery imported into the project using npm.
-3. Open `index.html` in the browser
-4. In the `intro.js` file, use jQuery to select the span element and:
+Let's get some basic practice with jQuery.
+1. Navigate into the `intro-exercise` directory. jQuery is included in this project via the CDN.
+2. In the `intro.js` file, use jQuery to select the span element and:
   1. change the span's text to say '1911'
   2. give the span a class of 'green'
-5. Commit your changes!
+3. Commit your changes!
 
 ## Up next:
-Go to the [selectors](./part-1-selectors/) README file. 
+Go to the [selectors](./part-1-selectors/) README file.
