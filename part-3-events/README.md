@@ -70,7 +70,7 @@ Use the jQuery docs to answer the following:
 
 5. How do you determine which element fired the event in a jQuery event listener? How is this different from finding the element that fired an event in vanilla JS?
 
-**_In vanilla JS you would log the event to find out waht element the event was fired on, whereas in jQuery, you would _**
+**_In vanilla JS you would log the event to find out waht element the event was fired on, whereas in jQuery, you would_**
 
 6. What’s the difference between this and $(this)? (think about what methods are available to each)
 7. Can you still access the event object within a jQuery event listener? If so, how?
