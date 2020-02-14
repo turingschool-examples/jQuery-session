@@ -61,11 +61,17 @@ Use the jQuery docs to answer the following:
 
 **_The following method allows us to list to any kind of event using the following specification_**
 
-
-
 3. What arguments do the methods from the previous two questions take?
+
+**_The methods above take in an event, and a function as an argument._**
+
 4. How do you take advantage of event delegation with jQuery? How is it different from vanilla JS event delegation?
+
+
 5. How do you determine which element fired the event in a jQuery event listener? How is this different from finding the element that fired an event in vanilla JS?
+
+**_In vanilla JS you would log the event to find out waht element the event was fired on, whereas in jQuery, you would _**
+
 6. What’s the difference between this and $(this)? (think about what methods are available to each)
 7. Can you still access the event object within a jQuery event listener? If so, how?
 
