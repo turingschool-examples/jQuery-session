@@ -59,7 +59,7 @@ __
 
 7. What’s the difference between .text() and .text([some text here])?
 
-**In `.text()`, you ware getting the text that is inside that element, whereas with_** `.text([some text here])`**_, you are setting the text of that element to what's inside the parenthesis of the jQuery text function._**
+**_In_** `.text()`**_, you ware getting the text that is inside that element, whereas with_** `.text([some text here])`**_, you are setting the text of that element to what's inside the parenthesis of the jQuery text function._**
 
 8. If you select multiple elements with jQuery, do you have to use a for loop / iterate through each to modify their content? Give an example.
 
