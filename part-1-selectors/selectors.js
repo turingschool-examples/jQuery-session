@@ -13,6 +13,6 @@ clearBtn.addEventListener('click', function(){
 $('label').addClass('green');
 $('.phone').addClass('yellow');
 $("label[for='email']").addClass('blue');
-console.log($('input[id="confirm"]').attr('id'))
+console.log($('input[id="confirm"]').attr('id'));
 $('p label').addClass('purple');
-$('button[id="clear-btn"]').addClass('red')
+$('button[id="clear-btn"]').addClass('red');
