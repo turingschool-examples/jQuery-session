@@ -13,19 +13,25 @@ Use the [jQuery Documentation](https://api.jquery.com/) to answer the following 
 
 ## Questions:
 1. How do you select a single element in jQuery? How does this differ from vanilla JS?
+- you can select it by its ID/class, or you can use the :first / :last selector. Vanilla JS is different in that you can't use the :first / :last
 
 2. What does the jQuery function return? How is it similar or different from a DOM Element object?
+- it returns an a collection of the elements you selected or created
 
 3. How can you select multiple elements with jQuery?
+- you can select a class on multiple elements or you can select all elements of a particular type by inputing the name of the element
 
 4. How can you select multiple elements with different IDs and classes in one selector expression?
+- you can provide a comma-separated list of elements like in css
 
 5. What are the different ways of chaining selectors?
+- use comma separation
 
 6. How do you select elements based on different attributes?
+- $( "input[name='first_name']" );
 
 7. How do you select a checkbox based on its state?
-
+- $( "form :checked" );
 
 ## Exercises:
 Open up the `selectors.html` file in your browser.
